@@ -104,9 +104,9 @@
         
         if (moreDataArray.count) {
             [self.dataMutableArray addObjectsFromArray:moreDataArray];
-            [self.tableView reloadData];
         }
-
+        
+        [self.tableView reloadData];
     }
 }
 
@@ -126,6 +126,9 @@
     [self loadMoreData];
     [self.historyView removeFromSuperview];
     [self.searchBar endEditing:YES];
+    if (self.noDataView && self.dataMutableArray.count == 0) {
+        self.noDataView.hidden = NO;
+    }
 }
 
 #pragma mark -- UITextFieldDelegate
@@ -164,6 +167,7 @@
 #pragma mark - historySearchRecord
 - (void)clearHistoryForKey:(NSString *)key {
     if (key.length) {
+        [self.historySearchRecordArray removeAllObjects];
         [[NSFileManager defaultManager] removeItemAtPath:[self getFilePathForKey:key] error:nil];
     }
 }

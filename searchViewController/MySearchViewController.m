@@ -11,6 +11,8 @@
 #import "CommonDefine.h"
 #import <Masonry.h>
 
+static NSString * const searchRecordKey = @"MySearchVCSearchRecordKey";
+
 @interface MySearchViewController ()<HistorySearchItemsViewDelegate>
 
 @end
@@ -40,7 +42,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     HistorySearchItemsView *myHistoryView = [[HistorySearchItemsView alloc] initWithFrame:self.view.bounds];
-    [myHistoryView setHistoryItemsArray:[self getHistoryForKey:@"aaa"]];
+    [myHistoryView setHistoryItemsArray:[self getHistoryForKey:searchRecordKey]];
     myHistoryView.delegate = self;
     self.historyView = myHistoryView;
     
@@ -48,8 +50,8 @@
 
 - (void)startSearch:(NSString *)keyword {
     [super startSearch:keyword];
-    [self saveItem:keyword forKey:@"aaa" maxSize:6];
-    [(HistorySearchItemsView *)self.historyView setHistoryItemsArray:[self getHistoryForKey:@"aaa"]];
+    [self saveItem:keyword forKey:searchRecordKey maxSize:6];
+    [(HistorySearchItemsView *)self.historyView setHistoryItemsArray:[self getHistoryForKey:searchRecordKey]];
 }
 
 - (NSArray *)searchResultWithKeyword:(NSString *)keyword
@@ -70,7 +72,7 @@
 
 - (void)HistorySearchItemsViewDeleteRecords {
     NSLog(@"我要删除自己了");
-    [(HistorySearchItemsView *)self.historyView setHistoryItemsArray:@[]];
+    [self clearHistoryForKey:searchRecordKey];
 }
 
 - (BOOL)needLoadMore {
