@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CF03F8647C6DFBD3535987B /* libPods-searchViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6C54C7C68A42FCCA035BF3 /* libPods-searchViewController.a */; };
+		36BC4BA3CB871D2B71F49DBE /* libPods-searchViewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B86FD0F7F93A1E5EA93A2D /* libPods-searchViewControllerUITests.a */; };
+		64A3B6EAE0DBF63AEEC09335 /* libPods-searchViewControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8797F66CE72881F677C6C2D0 /* libPods-searchViewControllerTests.a */; };
+		8F3303C2215E280500F4FBBC /* MySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3303C1215E280500F4FBBC /* MySearchViewController.m */; };
+		8F3303DA215E582F00F4FBBC /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3303D9215E582F00F4FBBC /* ExampleViewController.m */; };
+		8FC0B5AA2152002500C9F387 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0B5A92152002500C9F387 /* AppDelegate.m */; };
+		8FC0B5B22152002600C9F387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC0B5B12152002600C9F387 /* Assets.xcassets */; };
+		8FC0B5B52152002600C9F387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC0B5B32152002600C9F387 /* LaunchScreen.storyboard */; };
+		8FC0B5B82152002600C9F387 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0B5B72152002600C9F387 /* main.m */; };
+		8FC0B5C22152002600C9F387 /* searchViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0B5C12152002600C9F387 /* searchViewControllerTests.m */; };
+		8FC0B5CD2152002600C9F387 /* searchViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0B5CC2152002600C9F387 /* searchViewControllerUITests.m */; };
+		8FC0B5E021521C9100C9F387 /* BaseSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0B5DF21521C9100C9F387 /* BaseSearchViewController.m */; };
+		8FC0B5EF2152219800C9F387 /* CustomSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0B5EE2152219800C9F387 /* CustomSearchBar.m */; };
+		8FC0B5FA2152487200C9F387 /* HistorySearchItemsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0B5F92152487200C9F387 /* HistorySearchItemsView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FC0B5BE2152002600C9F387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FC0B59D2152002500C9F387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FC0B5A42152002500C9F387;
+			remoteInfo = searchViewController;
+		};
+		8FC0B5C92152002600C9F387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FC0B59D2152002500C9F387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FC0B5A42152002500C9F387;
+			remoteInfo = searchViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DF9145128973AAC51D33A2D /* Pods-searchViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchViewController.release.xcconfig"; path = "Target Support Files/Pods-searchViewController/Pods-searchViewController.release.xcconfig"; sourceTree = "<group>"; };
+		0F6C54C7C68A42FCCA035BF3 /* libPods-searchViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-searchViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A3D90BA0C82FF6541F844EC /* Pods-searchViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchViewController.debug.xcconfig"; path = "Target Support Files/Pods-searchViewController/Pods-searchViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		263B744771DAE22E5D634205 /* Pods-searchViewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchViewControllerUITests.release.xcconfig"; path = "Target Support Files/Pods-searchViewControllerUITests/Pods-searchViewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A197248D3D4269FDD77C08E /* Pods-searchViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchViewControllerUITests.debug.xcconfig"; path = "Target Support Files/Pods-searchViewControllerUITests/Pods-searchViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		60B86FD0F7F93A1E5EA93A2D /* libPods-searchViewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-searchViewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8797F66CE72881F677C6C2D0 /* libPods-searchViewControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-searchViewControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3303C0215E280500F4FBBC /* MySearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySearchViewController.h; sourceTree = "<group>"; };
+		8F3303C1215E280500F4FBBC /* MySearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySearchViewController.m; sourceTree = "<group>"; };
+		8F3303D8215E582F00F4FBBC /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		8F3303D9215E582F00F4FBBC /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		8FC0B5A52152002500C9F387 /* searchViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC0B5A82152002500C9F387 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8FC0B5A92152002500C9F387 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8FC0B5B12152002600C9F387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FC0B5B42152002600C9F387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FC0B5B62152002600C9F387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC0B5B72152002600C9F387 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8FC0B5BD2152002600C9F387 /* searchViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = searchViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC0B5C12152002600C9F387 /* searchViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchViewControllerTests.m; sourceTree = "<group>"; };
+		8FC0B5C32152002600C9F387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC0B5C82152002600C9F387 /* searchViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = searchViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC0B5CC2152002600C9F387 /* searchViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchViewControllerUITests.m; sourceTree = "<group>"; };
+		8FC0B5CE2152002600C9F387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC0B5DE21521C9100C9F387 /* BaseSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSearchViewController.h; sourceTree = "<group>"; };
+		8FC0B5DF21521C9100C9F387 /* BaseSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSearchViewController.m; sourceTree = "<group>"; };
+		8FC0B5EC2152216500C9F387 /* CommonDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		8FC0B5ED2152219800C9F387 /* CustomSearchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomSearchBar.h; sourceTree = "<group>"; };
+		8FC0B5EE2152219800C9F387 /* CustomSearchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSearchBar.m; sourceTree = "<group>"; };
+		8FC0B5F82152487200C9F387 /* HistorySearchItemsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistorySearchItemsView.h; sourceTree = "<group>"; };
+		8FC0B5F92152487200C9F387 /* HistorySearchItemsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistorySearchItemsView.m; sourceTree = "<group>"; };
+		C0A849521F570C2497A3712E /* Pods-searchViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchViewControllerTests.release.xcconfig"; path = "Target Support Files/Pods-searchViewControllerTests/Pods-searchViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1F41E9B275B1F2838FE9E07 /* Pods-searchViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-searchViewControllerTests.debug.xcconfig"; path = "Target Support Files/Pods-searchViewControllerTests/Pods-searchViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FC0B5A22152002500C9F387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF03F8647C6DFBD3535987B /* libPods-searchViewController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC0B5BA2152002600C9F387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64A3B6EAE0DBF63AEEC09335 /* libPods-searchViewControllerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC0B5C52152002600C9F387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36BC4BA3CB871D2B71F49DBE /* libPods-searchViewControllerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		751258E02A6CF578A3930CD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F6C54C7C68A42FCCA035BF3 /* libPods-searchViewController.a */,
+				8797F66CE72881F677C6C2D0 /* libPods-searchViewControllerTests.a */,
+				60B86FD0F7F93A1E5EA93A2D /* libPods-searchViewControllerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FC0B59C2152002500C9F387 = {
+			isa = PBXGroup;
+			children = (
+				8FC0B5A72152002500C9F387 /* searchViewController */,
+				8FC0B5C02152002600C9F387 /* searchViewControllerTests */,
+				8FC0B5CB2152002600C9F387 /* searchViewControllerUITests */,
+				8FC0B5A62152002500C9F387 /* Products */,
+				E7B4848324D916834CA3B554 /* Pods */,
+				751258E02A6CF578A3930CD7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FC0B5A62152002500C9F387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0B5A52152002500C9F387 /* searchViewController.app */,
+				8FC0B5BD2152002600C9F387 /* searchViewControllerTests.xctest */,
+				8FC0B5C82152002600C9F387 /* searchViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FC0B5A72152002500C9F387 /* searchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0B5DD21521C5300C9F387 /* baseSearchViewController */,
+				8FC0B5A82152002500C9F387 /* AppDelegate.h */,
+				8FC0B5A92152002500C9F387 /* AppDelegate.m */,
+				8F3303D8215E582F00F4FBBC /* ExampleViewController.h */,
+				8F3303D9215E582F00F4FBBC /* ExampleViewController.m */,
+				8F3303C0215E280500F4FBBC /* MySearchViewController.h */,
+				8F3303C1215E280500F4FBBC /* MySearchViewController.m */,
+				8FC0B5B12152002600C9F387 /* Assets.xcassets */,
+				8FC0B5B32152002600C9F387 /* LaunchScreen.storyboard */,
+				8FC0B5B62152002600C9F387 /* Info.plist */,
+				8FC0B5B72152002600C9F387 /* main.m */,
+			);
+			path = searchViewController;
+			sourceTree = "<group>";
+		};
+		8FC0B5C02152002600C9F387 /* searchViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0B5C12152002600C9F387 /* searchViewControllerTests.m */,
+				8FC0B5C32152002600C9F387 /* Info.plist */,
+			);
+			path = searchViewControllerTests;
+			sourceTree = "<group>";
+		};
+		8FC0B5CB2152002600C9F387 /* searchViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0B5CC2152002600C9F387 /* searchViewControllerUITests.m */,
+				8FC0B5CE2152002600C9F387 /* Info.plist */,
+			);
+			path = searchViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		8FC0B5DD21521C5300C9F387 /* baseSearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0B5EC2152216500C9F387 /* CommonDefine.h */,
+				8FC0B5F7215247FD00C9F387 /* historySearchItemsView_1 */,
+				8FC0B5E121521CE000C9F387 /* searchBar */,
+				8FC0B5DE21521C9100C9F387 /* BaseSearchViewController.h */,
+				8FC0B5DF21521C9100C9F387 /* BaseSearchViewController.m */,
+			);
+			path = baseSearchViewController;
+			sourceTree = "<group>";
+		};
+		8FC0B5E121521CE000C9F387 /* searchBar */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0B5ED2152219800C9F387 /* CustomSearchBar.h */,
+				8FC0B5EE2152219800C9F387 /* CustomSearchBar.m */,
+			);
+			path = searchBar;
+			sourceTree = "<group>";
+		};
+		8FC0B5F7215247FD00C9F387 /* historySearchItemsView_1 */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0B5F82152487200C9F387 /* HistorySearchItemsView.h */,
+				8FC0B5F92152487200C9F387 /* HistorySearchItemsView.m */,
+			);
+			path = historySearchItemsView_1;
+			sourceTree = "<group>";
+		};
+		E7B4848324D916834CA3B554 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D90BA0C82FF6541F844EC /* Pods-searchViewController.debug.xcconfig */,
+				0DF9145128973AAC51D33A2D /* Pods-searchViewController.release.xcconfig */,
+				C1F41E9B275B1F2838FE9E07 /* Pods-searchViewControllerTests.debug.xcconfig */,
+				C0A849521F570C2497A3712E /* Pods-searchViewControllerTests.release.xcconfig */,
+				4A197248D3D4269FDD77C08E /* Pods-searchViewControllerUITests.debug.xcconfig */,
+				263B744771DAE22E5D634205 /* Pods-searchViewControllerUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FC0B5A42152002500C9F387 /* searchViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC0B5D12152002600C9F387 /* Build configuration list for PBXNativeTarget "searchViewController" */;
+			buildPhases = (
+				A5631D1C4B7FE0F92556D866 /* [CP] Check Pods Manifest.lock */,
+				8FC0B5A12152002500C9F387 /* Sources */,
+				8FC0B5A22152002500C9F387 /* Frameworks */,
+				8FC0B5A32152002500C9F387 /* Resources */,
+				6CB16EA339F2148EC2097C30 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = searchViewController;
+			productName = searchViewController;
+			productReference = 8FC0B5A52152002500C9F387 /* searchViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FC0B5BC2152002600C9F387 /* searchViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC0B5D42152002600C9F387 /* Build configuration list for PBXNativeTarget "searchViewControllerTests" */;
+			buildPhases = (
+				3E4882869B0097568FDEA08F /* [CP] Check Pods Manifest.lock */,
+				8FC0B5B92152002600C9F387 /* Sources */,
+				8FC0B5BA2152002600C9F387 /* Frameworks */,
+				8FC0B5BB2152002600C9F387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FC0B5BF2152002600C9F387 /* PBXTargetDependency */,
+			);
+			name = searchViewControllerTests;
+			productName = searchViewControllerTests;
+			productReference = 8FC0B5BD2152002600C9F387 /* searchViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FC0B5C72152002600C9F387 /* searchViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC0B5D72152002600C9F387 /* Build configuration list for PBXNativeTarget "searchViewControllerUITests" */;
+			buildPhases = (
+				2E4BB60D32E70EA942990B4D /* [CP] Check Pods Manifest.lock */,
+				8FC0B5C42152002600C9F387 /* Sources */,
+				8FC0B5C52152002600C9F387 /* Frameworks */,
+				8FC0B5C62152002600C9F387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FC0B5CA2152002600C9F387 /* PBXTargetDependency */,
+			);
+			name = searchViewControllerUITests;
+			productName = searchViewControllerUITests;
+			productReference = 8FC0B5C82152002600C9F387 /* searchViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FC0B59D2152002500C9F387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = panpan;
+				TargetAttributes = {
+					8FC0B5A42152002500C9F387 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					8FC0B5BC2152002600C9F387 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8FC0B5A42152002500C9F387;
+					};
+					8FC0B5C72152002600C9F387 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8FC0B5A42152002500C9F387;
+					};
+				};
+			};
+			buildConfigurationList = 8FC0B5A02152002500C9F387 /* Build configuration list for PBXProject "searchViewController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FC0B59C2152002500C9F387;
+			productRefGroup = 8FC0B5A62152002500C9F387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FC0B5A42152002500C9F387 /* searchViewController */,
+				8FC0B5BC2152002600C9F387 /* searchViewControllerTests */,
+				8FC0B5C72152002600C9F387 /* searchViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FC0B5A32152002500C9F387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC0B5B52152002600C9F387 /* LaunchScreen.storyboard in Resources */,
+				8FC0B5B22152002600C9F387 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC0B5BB2152002600C9F387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC0B5C62152002600C9F387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E4BB60D32E70EA942990B4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-searchViewControllerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E4882869B0097568FDEA08F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-searchViewControllerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CB16EA339F2148EC2097C30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-searchViewController/Pods-searchViewController-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-searchViewController/Pods-searchViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5631D1C4B7FE0F92556D866 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-searchViewController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FC0B5A12152002500C9F387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC0B5B82152002600C9F387 /* main.m in Sources */,
+				8FC0B5FA2152487200C9F387 /* HistorySearchItemsView.m in Sources */,
+				8F3303C2215E280500F4FBBC /* MySearchViewController.m in Sources */,
+				8FC0B5EF2152219800C9F387 /* CustomSearchBar.m in Sources */,
+				8F3303DA215E582F00F4FBBC /* ExampleViewController.m in Sources */,
+				8FC0B5E021521C9100C9F387 /* BaseSearchViewController.m in Sources */,
+				8FC0B5AA2152002500C9F387 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC0B5B92152002600C9F387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC0B5C22152002600C9F387 /* searchViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC0B5C42152002600C9F387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC0B5CD2152002600C9F387 /* searchViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FC0B5BF2152002600C9F387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FC0B5A42152002500C9F387 /* searchViewController */;
+			targetProxy = 8FC0B5BE2152002600C9F387 /* PBXContainerItemProxy */;
+		};
+		8FC0B5CA2152002600C9F387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FC0B5A42152002500C9F387 /* searchViewController */;
+			targetProxy = 8FC0B5C92152002600C9F387 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FC0B5B32152002600C9F387 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FC0B5B42152002600C9F387 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FC0B5CF2152002600C9F387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FC0B5D02152002600C9F387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FC0B5D22152002600C9F387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A3D90BA0C82FF6541F844EC /* Pods-searchViewController.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = searchViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.searchViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FC0B5D32152002600C9F387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF9145128973AAC51D33A2D /* Pods-searchViewController.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = searchViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.searchViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FC0B5D52152002600C9F387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F41E9B275B1F2838FE9E07 /* Pods-searchViewControllerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = searchViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.searchViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/searchViewController.app/searchViewController";
+			};
+			name = Debug;
+		};
+		8FC0B5D62152002600C9F387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0A849521F570C2497A3712E /* Pods-searchViewControllerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = searchViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.searchViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/searchViewController.app/searchViewController";
+			};
+			name = Release;
+		};
+		8FC0B5D82152002600C9F387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A197248D3D4269FDD77C08E /* Pods-searchViewControllerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = searchViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.searchViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = searchViewController;
+			};
+			name = Debug;
+		};
+		8FC0B5D92152002600C9F387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 263B744771DAE22E5D634205 /* Pods-searchViewControllerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = searchViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.searchViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = searchViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FC0B5A02152002500C9F387 /* Build configuration list for PBXProject "searchViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC0B5CF2152002600C9F387 /* Debug */,
+				8FC0B5D02152002600C9F387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC0B5D12152002600C9F387 /* Build configuration list for PBXNativeTarget "searchViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC0B5D22152002600C9F387 /* Debug */,
+				8FC0B5D32152002600C9F387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC0B5D42152002600C9F387 /* Build configuration list for PBXNativeTarget "searchViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC0B5D52152002600C9F387 /* Debug */,
+				8FC0B5D62152002600C9F387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC0B5D72152002600C9F387 /* Build configuration list for PBXNativeTarget "searchViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC0B5D82152002600C9F387 /* Debug */,
+				8FC0B5D92152002600C9F387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FC0B59D2152002500C9F387 /* Project object */;
+}
